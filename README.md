@@ -1,26 +1,12 @@
-# Deep Learning with python project
+# Vehicle License Plate Detection (YOLOv8)
 
+Detects vehicle license plates in images with a YOLOv8n model fine-tuned on European plates (DSTI Deep Learning project).
 
-## Project 1 Summary
+**Dataset:** [N] images of European license plates (`eu.zip`), labels converted to YOLO format with `convert_labels.py` and split into train/val/test with `split_data.py`.
 
-The aim of this project is to familiarize students with the different sub-tasks that exist in the
-realm of Computer Vision. The objective of this project is to select one sub-task in Computer
-Vision and solve it with a model of the students’ choice.
-Students have complete control over the datasets and the model selection. However, the
-methodology should be justified and reproducible. This is a chance to get students to work
-in the field of their liking and practically handle complex models.
-The sub-tasks can be found here: https://huggingface.co/tasks.
+**Run:** `pip install -r requirements.txt` → `python split_data.py` → `python train_yolo.py`
 
-## Project Evaluation:
-All projects will be evaluated using the following rubric. It contains the required items for a
-complete submission. The grading system is over 5 and the final grade will be transformed to
-a grade over 100.
-
-● Dataset distillation [1 point]
-
-● Model architecture and code [1 point]
-
-● Project report [1 point]
+**Result:** mAP@0.5 = [X] on the validation set after [E] epochs; example detection in `output_annotated_image.jpg`.
 
 ● Project reproducibility (requirements file with necessary packages, README file for
 running the project, environment, model code) [1 point]
