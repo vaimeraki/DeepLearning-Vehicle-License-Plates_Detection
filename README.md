@@ -1,4 +1,4 @@
-# Vehicle License Plate Detection (YOLOv8)
+# Vehicle License Plate Detection (YOLO11)
 
 Detects vehicle license plates in images with a YOLOv8n model fine-tuned on European plates (DSTI Deep Learning project).
 
