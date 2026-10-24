@@ -9,10 +9,10 @@ model_name = 'yolo11n.pt' # Using nano version for faster training --> 11x is bi
 model = YOLO(model_name)
 
 # Training hyperparameters
-EPOCHS = 2       
+EPOCHS = 50       
 IMG_SIZE = 640    
 BATCH_SIZE = 16   
-PATIENCE = 5
+PATIENCE = 10
 
 results = model.train(
             data = data_yaml_path,
